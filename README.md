@@ -21,6 +21,14 @@
 
 > 🤖 下一个 AI / 开发者请先读 **[AGENTS.md](AGENTS.md)**（项目结构、启动契约、踩过的坑），不要先全库扫描。
 
+<!-- mirror-banner:start -->
+> **⚠️ 这是镜像仓库**：[DSH-APP/DSHA](https://github.com/DSH-APP/DSHA) 的官方 APK 存放处，代码未做任何修改。
+> APK 由[镜像工作流](.github/workflows/mirror-upstream.yml)每 6 小时从上游同步一次，**不重新打包、不重新签名**，
+> sha256 与上游逐字节一致（逐版校验值见 Release 里的 `mirror-manifest.json`）。
+> 本仓库的 Release **仅供下载安装**；源码请以上游为准，新版本会自动出现在 [Releases](https://github.com/Liaoyun666/DSHA/releases) 里。
+
+<!-- mirror-banner:end -->
+
 > 正式版 **[v0.2.1-rc.2 · build190](https://github.com/DSH-APP/DSHA/releases/tag/v0.2.1-rc.2)**：虚拟屏、全局授权、新旧共存及移动 UI 更新。[中文文档索引](docs/documentation-index.md) · [English](docs/en/index.md)。
 
 ## ❤️ 赞助商
