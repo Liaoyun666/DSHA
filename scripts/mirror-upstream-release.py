@@ -262,7 +262,7 @@ def mirror_release(token: str, upstream: str, fork: str, release, args) -> list[
                          "old_id": existing.get(name, {}).get("id")})
 
         if not verified:
-            log("[{}] 本轮没有需要新传的主体资产".format(tag))
+            log("[{}] 本轮没有需要重新下载校验的主体资产（已镜像的与上游一致）".format(tag))
 
         # ③ 校验清单：只在缺失时补一次，保证重复运行结果稳定
         manifest = {
