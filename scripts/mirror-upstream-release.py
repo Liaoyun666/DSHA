@@ -112,11 +112,11 @@ def select_assets(assets, include_low: bool, include_source: bool):
         if "low.apk" in lowered and not include_low:
             continue
         if lowered.endswith(".zip") or lowered.endswith(".zip.sha256"):
-            if not include_source:
-                continue
-        if not (lowered.endswith(".apk") or is_sidecar(name)):
+            if include_source:
+                chosen.append(asset)
             continue
-        chosen.append(asset)
+        if lowered.endswith(".apk") or is_sidecar(name):
+            chosen.append(asset)
     chosen.sort(key=lambda a: (1 if is_sidecar(a["name"]) else 0, a["name"]))
     return chosen
 
