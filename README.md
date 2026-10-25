@@ -26,6 +26,10 @@
 > APK 由[镜像工作流](.github/workflows/mirror-upstream.yml)每 6 小时从上游同步一次，**不重新打包、不重新签名**，
 > sha256 与上游逐字节一致（逐版校验值见 Release 里的 `mirror-manifest.json`）。
 > 本仓库的 Release **仅供下载安装**；源码请以上游为准，新版本会自动出现在 [Releases](https://github.com/Liaoyun666/DSHA/releases) 里。
+>
+> 也可以手动催一次：**Actions → Mirror upstream release → Run workflow**（可填 tag、可只检查不上传）。
+> ⚠️ GitHub 的规则是「公开仓库连续 60 天无活动会自动停用定时任务」——如果哪天发现不自动同步了，
+> 去 Actions 里把工作流重新启用、或随便推一个提交即可恢复。
 
 <!-- mirror-banner:end -->
 
